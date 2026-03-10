@@ -1,204 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ルナグラス完全ガイド｜月や火星で地球と同じ重力で暮らす施設</title>
-<meta name="description" content="ルナグラスは、京都大学と鹿島建設が構想する月や火星の人工重力居住施設。中学生でもわかる解説から、技術的深堀りまでまとめました。" />
-<style>
-body {
-font-family: sans-serif;
-line-height: 1.7;
-color: #f0f4f8;
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-background: linear-gradient(
-    135deg,
-    #0f1c3f,
-    #1a2b5a 40%,
-    #2c4b8a 70%,
-    #4b75b8 100%
-);
-}
-h1, h2, h3 {
-color: #a5d8ff;
-}
-h1 {
-font-size: 1.8em;
-margin-bottom: 16px;
-}
-h2 {
-font-size: 1.4em;
-margin-top: 32px;
-margin-bottom: 16px;
-}
-h3 {
-font-size: 1.2em;
-margin-top: 24px;
-margin-bottom: 12px;
-}
-p {
-margin-bottom: 16px;
-}
-ul, ol {
-margin-bottom: 16px;
-}
-.back-link {
-display: block;
-margin-top: 32px;
-color: #333;
-text-decoration: none;
-font-size: 0.9em;
-}
-.back-link:hover {
-text-decoration: underline;
-}
-.video-container {
-position: relative;
-width: 100%;
-height: 0;
-padding-bottom: 56.25%;
-margin: 24px 0;
-}
-.video-container iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ルナグラス完全ガイド | UC Fund</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --accent-cyan: #27d4ff;
+            --text-main: #e2e8f0;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(to bottom, rgba(39, 212, 255, 0.1), transparent);
+        }
+        h1 {
+            color: var(--accent-cyan);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .hero-tag {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+        .section {
+            margin-bottom: 50px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h2 {
+            border-left: 4px solid var(--accent-cyan);
+            padding-left: 15px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .highlight {
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        /* YouTubeレスポンシブ対応 */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid var(--accent-cyan);
+            margin: 24px 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            margin-top: 80px;
+            font-size: 12px;
+            color: #9ca3af;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+        }
+        a { color: var(--accent-cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
 
-<h1>🌙 宇宙に「地球」を作る！？ルナグラス完全ガイド</h1>
-<p>
-このページは、<strong>知識ゼロでもわかる簡単な説明</strong>から始まり、<strong>スクロールするたびに技術的深堀り</strong>が増えるようにデザインされています。
-</p>
+<header>
+    <div class="container">
+        <p style="color: var(--accent-cyan); font-weight: bold;">[ 宇宙に「地球」を作る ]</p>
+        <h1>ルナグラス完全ガイド</h1>
+        <p class="hero-tag">月や火星で、地球と同じ重力で暮らす未来</p>
+    </div>
+</header>
 
-<!-- === 1. ひとことで言うと？ === -->
-<h2>1. ひとことで言うと？</h2>
-<p>
-「<strong>月や火星の上で、地球とまったく同じように暮らすための巨大な回転施設</strong>」のことです。京都大学と鹿島建設が本格的に研究している、<strong>SF映画のような本当の研究構想</strong>です。[web:3][web:6]
-</p>
+<div class="container">
+    <div class="section">
+        <h2>ルナグラスってなに？</h2>
+        <p>
+            一言でいうと、<span class="highlight">「月の上で地球と同じように暮らすための巨大な回転施設」</span>のことです。京都大学と鹿島建設が本格的に研究している、SF映画のような本当の未来構想です。
+        </p>
+    </div>
 
-<!-- === 2. なぜ回転するの？（中学生向け） === -->
-<h2>2. なぜ「回転」させるの？</h2>
-<p>宇宙生活で一番の問題は<strong>「重力がない（弱い）」</strong>ことです。</p>
-<p>
-<strong>月の重力は地球の6分の1</strong>しかありません。
-ずっとそこにいると、筋肉や骨が弱くなり、子供の正常な成長が妨げられる可能性があります。
-</p>
-<h3>解決方法：「遠心力」で重力を再現する</h3>
-<p>
-バケツに水を入れて振り回すと、水がこぼれず底に張り付きますよね？
-これと同じ原理で、巨大な<strong>シャンパングラス型の建物を回転</strong>させ、壁側に「<strong>擬似的な重力＝人工重力</strong>」を作り出します。
-</p>
-<p>
-これによって、<strong>月や火星にいながら、地球と同じ1G（1G＝地球の重力）</strong>の環境で生活できるようになります。
-</p>
+    <div class="section">
+        <h2>なぜ「回転」させるの？</h2>
+        <p>宇宙生活で一番の問題は、重力が弱いことです。月の重力は地球のわずか6分の1しかありません。</p>
+        <p>
+            ずっと重力の弱い場所にいると、人間の筋肉や骨は弱くなってしまいます。そこで、巨大なシャンパングラス型の建物を<span class="highlight">「回転」</span>させ、その遠心力を使って、壁側に地球と同じ重力（1G）を作り出すのです。
+        </p>
+    </div>
 
-<!-- === 3. どんな見た目？ === -->
-<h2>3. どんな見た目なの？</h2>
-<p>形は<strong>シャンパングラスのような巨大なコップ型</strong>です。</p>
-<div class="video-container">
-<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/z9bP1pLVwk8" 
-  title="ルナグラス関連動画" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
+    <div class="section">
+        <h2>どんな見た目なの？</h2>
+        <p>高さは約400〜500メートル。東京タワーよりも高い巨大なグラスの中に、家が建ち、森が広がり、川が流れる街が作られます。</p>
+        
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/LC4JMFwBOhQ" 
+                title="ルナグラス・マーズグラス 構想動画" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <p style="font-size: 0.85em; color: #9ca3af; text-align: right; margin-top: -10px;">
+            映像出典：<a href="https://www.youtube.com/watch?v=LC4JMFwBOhQ" target="_blank">鹿島建設公式チャンネル（YouTube）</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>技術的ポイント：3つの柱</h2>
+        <p>この構想はただの建物だけではありません。以下の3つが揃って初めて実現します。</p>
+        <ul>
+            <li><span class="highlight">ルナグラス</span>：地球重力を再現する居住施設</li>
+            <li><span class="highlight">コアバイオーム</span>：地球の生態系（空気や植物）をそのまま持ち込む仕組み</li>
+            <li><span class="highlight">ヘキサトラック</span>：月と地球、月と火星を重力を保ったまま移動する交通網</li>
+        </ul>
+    </div>
+
+    <div class="section" style="border: 2px solid var(--accent-cyan);">
+        <h2>周知役からのメッセージ</h2>
+        <p>
+            ルナグラスは、人類が宇宙で「一瞬過ごす」のではなく「永遠に暮らす」ための鍵です。しかし、これほど壮大な研究は、国や一部の企業の予算だけでは、完成まで何十年かかるかわかりません。<br><br>
+            <span class="highlight">「20億円の融資でも守れなかった日本の宇宙の未来」</span>を繰り返さないために。私たちの「1日1円」の積み重ねが、このグラスの中にある森や川、そして未来の子供たちの笑顔を守る力になります。
+        </p>
+    </div>
+
+    <footer style="line-height: 1.6;">
+        <p style="font-weight: bold; color: #e2e8f0; margin-bottom: 8px;">【免責事項および出典】</p>
+        <p>本ページは、宇宙1日1円基金（UC Fund）構想の周知を目的とした有志による解説ページです。本プロジェクトは、以下の研究機関および企業による公式な運営物ではありません。掲載内容は、公表されている以下の資料に基づき、一般の方向けに要約・解説したものです。</p>
+
+        <ul style="list-style: none; padding: 0; margin: 10px 0;">
+            <li><strong>出典元：</strong> 京都大学 有人宇宙学研究センター / 鹿島建設株式会社</li>
+            <li><strong>発表資料：</strong> 「月・火星における人工重力施設による宇宙居住構想の検討開始について」</li>
+            <li><strong>公式文書：</strong> <a href="https://www.kajima.co.jp/news/press/202207/pdf/6a1-j.pdf" target="_blank">プレスリリース全文（PDF）</a></li>
+        </ul>
+        <p style="margin-top: 10px;">※本サイトの目的は、上記構想の社会的な認知拡大と、それを支援する市民基金（UC Fund）の周知にあります。</p>
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="https://ucfundproject-ops.github.io/uc-fund-project/" style="background: rgba(39, 212, 255, 0.2); padding: 10px 20px; border-radius: 5px; border: 1px solid var(--accent-cyan);">← 公式サイトに戻る</a>
+        </p>
+    </footer>
 </div>
-<p style="font-size: 0.9em; color: #ccc; margin-top: 8px;">
-  動画出典：<a href="//www.youtube.com/watch?v=z9bP1pLVwk8">youtube</a><br>
-  ※外部サイトに移動します
-</p>
-
-<ul>
-<li>高さ：約<strong>400〜536メートル</strong>（東京タワーより高い）</li>
-<li>回転半径：約<strong>100メートル</strong></li>
-<li>回転周期：1周約<strong>20秒</strong>で回転することで、壁側に<strong>1G</strong>の重力が得られる設計です。</li>
-</ul>
-<p>
-中身は、<strong>家が建ち、木が生え、川が流れ、街と同じような生活空間</strong>がグラスの内側に再現されます。
-まるで<strong>地球の街を巨大なコップの中に張り付けたような世界</strong>です。
-</p>
-<p>
-月にあるのを<strong>「ルナグラス」</strong>、火星にあるのを<strong>「マーズグラス」</strong>と呼びます。
-</p>
-
-<!-- === 4. 技術的深堀り（高校生・一般向け） === -->
-<h2>4. 技術的深堀り</h2>
-<h3>人工重力の仕組み</h3>
-<p>
-ルナグラスは、<strong>天体の重力＋回転による遠心力</strong>を合成して、地球の1Gに近い環境を再現しています。
-回転軸からの距離（半径）が大きい階層ほど、重力が強く感じられます。
-逆に内側の階層は低重力なので、体を徐々に慣らす訓練などにも使えます。
-</p>
-<h3>多様な重力エリア</h3>
-<p>
-一部の設計案では、施設内に<strong>標準重力エリア（1G）」「高重力エリア（例：2.5G、木星相当）」「低重力エリア（例：火星の約3/8G）」</strong>などを組み合わせており、健康維持や研究・トレーニングに活かす想定もあります。
-</p>
-
-<!-- === 5. 最新進捗・研究段階（2024〜2025年） === -->
-<h2>5. 最新進捗と研究段階（2024〜2025年）</h2>
-<p>
-ルナグラスは、<strong>まだ実験・研究段階で、実際の月面建設の日程は決まっていません</strong>。
-しかし、宇宙居住や人工重力の可能性を検討する「<strong>未来の試み</strong>」として、世界中の研究者や産業界から注目されています。[web:1][web:3][web:29]
-</p>
-<h3>京都大学と鹿島建設の共同研究</h3>
-<p>
-京都大学と鹿島建設は、<strong>月および火星での生活基盤となる人工重力居住施設（ルナグラス・マーズグラス）</strong>、<strong>ミニコアバイオーム（縮小生態系）</strong>、<strong>人工重力交通ネットワーク（ヘキサトラック）</strong>という3つの構想を掲げ、その実現に向けた研究を続けています。
-</p>
-<h3>モデル公開・展示イベント</h3>
-<p>
-<strong>2024年</strong>には、<strong>1万人規模の居住空間を想定した「1/10,000サイズのルナグラス模型」</strong>が報道向けに公開され、宇宙関連の展示やイベントでも紹介されています。
-これにより、一般の人にもイメージが伝わりやすくなり、<strong>宇宙居住の未来像</strong>に対する関心が高まっています。
-</p>
-
-<!-- === 6. 将来のステップ（小規模・実験から） === -->
-<h2>6. 将来のステップ：まずは少人数から</h2>
-<p>
-いきなり1万人が住む巨大施設を作るのは現実的ではないため、<strong>段階的なアプローチ</strong>が前提として想定されています。
-</p>
-<ul>
-<li>まずは<strong>10人〜100人が暮らす規模の実験型施設</strong>の設計・検証を進めている。</li>
-<li>さらに小さな規模では、<strong>ロケットのフェアリングに入る程度の2つのモジュールを「ヤジロベエ型」に回転</strong>させるだけでも、<strong>低重力環境での実験的な人工重力</strong>が可能と考えられている。</li>
-</ul>
-<p>
-こうした<strong>実験・検証の積み重ね</strong>を経て、将来的に月面や火星の常駐居住に向けた大型施設の実現を目指す流れとなります。
-</p>
-
-<!-- === 7. 補足：これは「夢の構想」であることを明示 === -->
-<h2>7. あくまで「夢の構想」であることを意識して</h2>
-<p>
-現在、<strong>ルナグラスはまだ「研究構想・実験段階」</strong>であり、実際の月面や火星での建設時期やスケジュールは、公式で決まっていません。
-しかし、宇宙医療や建築技術、宇宙政策の分野で、<strong>「地球の重力環境を再現する」ことの重要性</strong>を示す重要な試みの一つとして、注目が集まっています。
-</p>
-
-
-<div style="font-size: 12px; color: #9ca3af; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; line-height: 1.6;">
-  <p style="font-weight: bold; color: #e2e8f0; margin-bottom: 8px;">【免責事項および出典】</p>
-  
-  <p>本ページは、宇宙1日1円基金（UC Fund）構想の周知を目的とした有志による解説ページです。本プロジェクトは、以下の研究機関および企業による公式な運営物ではありません。掲載内容は、公表されている以下の資料に基づき、一般の方向けに要約・解説したものです。</p>
-
-  <ul style="list-style: none; padding: 0; margin: 10px 0;">
-    <li><strong>出典元：</strong> 京都大学 有人宇宙学研究センター / 鹿島建設株式会社</li>
-    <li><strong>発表資料：</strong> 「月・火星における人工重力施設による宇宙居住構想の検討開始について」</li>
-    <li><strong>公表日：</strong> 2022年7月5日</li>
-    <li><strong>公式文書：</strong> <a href="https://www.kajima.co.jp/news/press/202207/pdf/6a1-j.pdf" target="_blank" style="color: #27d4ff; text-decoration: underline;">プレスリリース全文（PDF）</a></li>
-  </ul>
-
-  <p style="margin-top: 10px;">※本サイトの目的は、上記構想の社会的な認知拡大と、それを支援する市民基金（UC Fund）の周知にあります。最新の正確な研究成果については、必ず上記の公式発表資料をご確認ください。</p>
-</div>
-
-<!-- === 戻るリンク（既存ページへ戻る用） === -->
-<a href="https://ucfundproject-ops.github.io/uc-fund-project/" class="back-link">← ホームページに戻る</a>
-
 
 </body>
 </html>
